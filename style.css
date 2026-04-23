@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Balance */
+h1 {
+    margin: 15px 0;
+    color: #3b82f6;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #3b82f6;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* Withdraw */
+.withdraw-section {
+    display: flex;
+    margin-top: 15px;
+}
+
+.withdraw-section input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+/* Message */
+#message {
+    margin-top: 10px;
+    color: red;
+}
+
+/* History */
+.history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.history ul {
+    list-style: none;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.history li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .withdraw-section {
+        flex-direction: column;
+    }
+
+    .withdraw-section input {
+        margin-bottom: 10px;
+    }
+}
